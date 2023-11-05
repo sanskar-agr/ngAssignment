@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="product-list">
+    <div *ngFor="let product of products$ | async" class="product-item">
+      <img [src]="product.image" alt="{{ product.title }}" class="product-image">
+      <div class="product-details">
+        <h3 class="product-title">{{ product.title }}</h3>
+        <p class="product-category">{{ product.category }}</p>
+        <p class="product-price">$ {{ product.price }}</p>
+        <div class="product-rating">
+          <span class="rating-stars">Rating: {{ product.rating.rate }}</span>
+          <span class="rating-count">({{ product.rating.count }} ratings)</span>
+        </div>
+        <button class="buy-button">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  

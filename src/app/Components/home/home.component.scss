@@ -1,0 +1,82 @@
+/* Add these styles to your component's CSS or a global CSS file */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  
+  .product-item {
+    width: 40%; /* Display two products in a row */
+    border: 1px solid #ddd; /* Adjust border color */
+    margin: 1rem 0.5%; /* Adjust margins for spacing between products */
+    padding: 50px;
+    position: relative;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #fff; /* Set a white background */
+  }
+  
+  .product-item:hover {
+    border-color: #ff9900; /* Change border color on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+  }
+  
+  .product-image {
+    width: 200px; /* Set a fixed width for the image */
+    height: 200px; /* Set a fixed height for the image */
+    max-width: 100%; /* Ensure the image doesn't exceed the container */
+  }
+  
+  .product-details {
+    padding: 1rem;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333; /* Adjust text color */
+  }
+  
+  .product-category {
+    font-size: 0.9rem;
+    color: #555; /* Adjust text color */
+    margin: 0.5rem 0;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c45500; /* Adjust price color */
+    margin: 0.5rem 0;
+  }
+  
+  .product-rating {
+    font-size: 0.9rem;
+    color: #555; /* Adjust text color */
+    margin: 0.5rem 0;
+  }
+  
+  .rating-stars {
+    color: #ff9900; /* Adjust to your desired rating star color */
+  }
+  
+  .rating-count {
+    color: #555; /* Adjust text color */
+  }
+  
+  .buy-button {
+    background-color: #ff9900; /* Adjust to your desired button color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-weight: bold;
+    width: 100%; /* Button takes full width of the container */
+  }
+  
+  .buy-button:hover {
+    background-color: #ff4500; /* Change button color on hover */
+  }
+  

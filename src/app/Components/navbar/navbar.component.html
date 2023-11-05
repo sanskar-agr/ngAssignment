@@ -1,0 +1,38 @@
+<!-- <nav class="navbar navbar-light navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">My NgRx App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item" *ngIf="!isLoggedIn">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+          </li>
+        </ul>
+        <span *ngIf="userName" class="navbar-text">Welcome, {{ userName }}</span>
+      </div>
+    </div>
+  </nav> -->
+
+  <div class="navbar">
+    <div class="logo">Product Store</div>
+    <div class="navbar-links">
+      <a routerLink="/">Home</a>
+      <!-- Conditionally display the Welcome message -->
+      <ng-container *ngIf="isLoggedIn ; else showLogin">
+        <span *ngIf="userName" class="welcome-user">Welcome, {{ userName }}</span>
+        <button (click)="logout() "  class="login-button">Logout</button>
+      </ng-container>
+      
+      <ng-template #showLogin>
+        <a routerLink="/login">Login</a>
+      </ng-template>
+    </div>
+  </div>
+  
+  
